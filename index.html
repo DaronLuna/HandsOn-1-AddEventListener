@@ -37,26 +37,26 @@
 </head>
 <body>
      <h1>"Javascript addEventListener()Hands-On"</h1>
-     <button id="Click A">Button 1</button>
-     <button id="Click B">Button 2</button>
-     <button id="Click C">Button 3</button>
+     <button id="ClickA">Button 1</button>
+     <button id="ClickB">Button 2</button>
+     <button id="ClickC">Button 3</button>
      
      <script>
-          function myfunction(){
+          function myfunction1(){
                alert("Button 1 was clicked")
           };
           
-          function myfunction(){
+          function myfunction2(){
                alert("Button 2 was clicked")
           };
           
-          function myfunction(){
+          function myfunction3(){
                alert("Button 3 was clicked")
           };
           
-          document.getElementById("Click A").addEventListener("click myfunction");
-          document.getElementById("Click B").addEventListener("click myfunction");
-          document.getElementById("Click C").addEventListener("click myfunction");
+          document.getElementById("ClickA").addEventListener("click", myfunction1);
+          document.getElementById("ClickB").addEventListener("click", myfunction2);
+          document.getElementById("ClickC").addEventListener("click", myfunction3);
      </script>
 </body>
 </html>
