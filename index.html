@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+     <title>Change Color</title>
+     <style>
+     body {
+          justify-content: center;
+          width: auto;
+          height: 41.5rem;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          background: linear-gradient(green, blue, green);
+     }
+     #header {
+          width: 10rem;
+          height: 10rem;
+          border: 2px solid green;
+          border-radius: 10px;
+          background-color: green;
+          margin-bottom: 2rem;
+     }
+     h1 {
+          color: blue;
+     }
+     span {
+          color: green;
+     }
+     button {
+          width: 50%;
+          border-radius: 10px;
+          margin-left: 25%;
+          background: green;
+          color: black;
+          padding: 5px;
+          transition: 0.4s;
+          font-size: large;
+          text-decoration: none;
+      }
+        
+      button:hover {
+          background: blue;
+          color: black;
+      }
+        
+      button:active {
+          background: green;
+          color: black;
+      }
+     </style>
+</head>
+<body>
+     <h1>Change <span>Color</span></h1>
+     <div id="header"></div>
+     
+     <div class="container">
+          <button id="click">Change Color</button>
+     </div>
+     
+     <script>
+          const header = document.getElementById("header");
+          let click = document.getElementById("click");
+          
+          click.addEventListener("click", changecolor) 
+          
+          function changecolor() {
+          if (header.style.backgroundColor === "green"){
+               (header.style.backgroundColor = "blue")
+              } else {
+                   (header.style.backgroundColor = "green");
+              }
+          };
+     </script>
+</body>
+</html>
